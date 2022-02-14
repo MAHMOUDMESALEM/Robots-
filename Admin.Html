@@ -1,0 +1,18 @@
+<html>
+<head>
+  
+    <title>Admin page</title>
+    <script type="text/javascript">
+    function changeColor(color){
+        var color = document.getElementById('back_color').value;
+        localStorage.setItem("back_ground", color);
+        document.bgColor = color;
+    }
+    </script>
+</head>
+<body>
+    <div style="margin-left:40%;">
+    <input type="color" id="back_color" onchange="changeColor()" />
+    </div>
+</body>
+</html>  
